@@ -1,0 +1,22 @@
+{
+   "name": "react_node_typeorm_7",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "ts-node": "10.1.0",
+      "@types/node": "^8.0.29",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "typeorm": "0.2.34",
+      "reflect-metadata": "^0.1.10",
+      "mssql": "^4.0.4"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "typeorm-migration-generate": "ts-node ./node_modules/typeorm/cli.js migration:generate -n x",
+      "typeorm-migration-run": "ts-node ./node_modules/typeorm/cli.js migration:run",
+      "typeorm-cache-clear": "ts-node ./node_modules/typeorm/cli.js cache:clear",
+      "typeorm-command": "ts-node ./node_modules/typeorm/cli.js schema:log"
+   }
+}

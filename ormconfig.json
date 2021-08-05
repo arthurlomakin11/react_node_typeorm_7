@@ -1,0 +1,23 @@
+{
+   "type": "mssql",
+   "host": "localhost",
+   "username": "admin",
+   "password": "",
+   "database": "test",
+   "synchronize": false,
+   "logging": false,
+   "entities": [
+      "src/entity/**/*{.js,.ts}"
+   ],
+   "migrations": [
+      "src/migration/**/*.{.js,.ts}"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.{.js,.ts}"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
